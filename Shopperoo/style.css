@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;    
+}
+
+body {
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(161,49,24,1) 35%, rgba(255,223,0,0.8564814814814815) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(161,49,24,1) 35%, rgba(255,223,0,0.8564814814814815) 100%);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(161,49,24,1) 35%, rgba(255,223,0,0.8564814814814815) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ffdf00",GradientType=1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.form-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.form-container input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f80000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #ffbf00;
+}
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+}

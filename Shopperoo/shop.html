@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopperoo</title>
+    <link rel="stylesheet" type="text/css" href="assets/shop.css">
+  </head>
+  <body>
+    <header>
+      <h1>Shopperoo</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="viewCart()">Cart <span id="cart-notification">0</span></a></li>
+        </ul>
+      </nav>
+    </header>       
+    <main>
+      <section class="product">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Product 1">
+        <h3 id="item-name-1">Polaroid</h3>
+        <p id="item-price-1">$199.99</p>
+        <label for="item-qty-1">Quantity:</label>
+        <input type="number" id="item-qty-1" value="1">
+        <button onclick="addToCart(1)">Add to Cart</button>
+      </section>
+      <section class="product">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Product 2">
+        <h3 id="item-name-2">Wireless Headphones</h3>
+        <p id="item-price-2">$294.99</p>
+        <label for="item-qty-2">Quantity:</label>
+        <input type="number" id="item-qty-2" value="1">
+        <button onclick="addToCart(2)">Add to Cart</button>
+      </section>
+      <section class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Product 3">
+        <h3 id="item-name-3">Nike</h3>
+        <p id="item-price-3">$699.99</p>
+        <label for="item-qty-3">Quantity:</label>
+        <input type="number" id="item-qty-3" value="1">
+        <button onclick="addToCart(3)">Add to Cart</button>
+      </section>
+    </main>
+    <footer>
+      <center>
+        <p>&copy; 2023 Shopperoo. All rights reserved.</p>
+      <p class="devName">Hazel Agustin<br>_developer</p>
+      <img class="dev" src="https://shorturl.at/lsFN8" alt="developer">
+      </center>
+    </footer>
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Cart</h2>
+        <table id="cart-table">
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </table>
+        <p id="cart-total">Total: $0.00</p>
+        <button id="checkout-button" onclick="checkout()">Checkout</button>
+      </div>
+    </div>
+    <script src="assets/shop.js"></script>
+  </body>
+</html>
